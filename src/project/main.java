@@ -14,24 +14,27 @@ public class main {
       Scanner input=new Scanner(System.in);
       
       update up=new update();
-      create c1=new create();
+      userr c1=new userr();
       admin ad=new admin();
+      user u=new user();
             System.out.println("1-Admin\n2-user");
             int ch=input.nextInt();
             if(ch==1){
-               ad.display();
+               ad.input();
             }
 if(ch==2){
-      System.out.println("Whate Do you want?\n"
-              + "1-Create\n2-update");
-      int choose=input.nextInt();
-      switch(choose){
-          case 1:
-              c1.display();
-              break;
-          case 2:
-              up.display();
+
+              System.out.println("1-Login\n2-sign up");
+              int c=input.nextInt();
+              if(c==1){
+               u.inputlogin();
+              }
+              else if(c==2){
+                  u.inputsign();
+              }
+              c1.input1();
+           
       }}
       
   }  
-}
+

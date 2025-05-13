@@ -6,34 +6,39 @@ package project;
 
 
 public class create extends edentity {
-    private int IDpass;
-    private int IDtaskara;
-     public void setIDpass(int IDpass){
-      this.IDpass=IDpass;
-  }
-   public int getIDpass(){
-       return IDpass;
-   }
-       public void setIDtaskara(int IDtaskara){
-      this.IDtaskara=IDtaskara;
-  }
+    
+   private int IDtaskara;
+     
+   public void settaskara(int IDtaskara){
+     this.IDtaskara=IDtaskara;  
+   }   
    public int getIDtaskara(){
        return IDtaskara;
    } 
-   public void display(){
-       setIDpass(12345);
-       setIDtaskara(436364);
-       setname("helin shamal");
-       setbirth("12_1_2005");
-       setemail("helinshamal@gmail.com");
-       setnumber(07702373263);
-       setblood("AB+");
-              System.out.println("Create edentity");
+   public void input(){
+      super.input();
+       System.out.println("ID identity: ");
+       String Idid=i.next();
+        System.out.println("Birthday: ");
+      String birth=i.next();
+       setbirth(birth);
+         System.out.println("blood type: ");
+      String b=i.next();
+       setblood(b);
+output();
+       
+      
+   }
+   public void output(){
+       super.output();
+       System.out.println("ID identity: "+getIDtaskara());
+       System.out.println("name: "+getname());
+              System.out.println("email: "+getemail());
+                System.out.println("Phone Number: "+getnumber());
+                       System.out.println("Birthday: "+getbirth());
+       System.out.println("blood type: "+getblood());
 
-    System.out.println("fullname:"+getname()+"\n"
-   + "BirthDay:"+getbirth()+"\nBlood"+getblood()
-    +"\nIDpass: "+getIDpass()+
-  "\nIDtaskara: "+getIDtaskara()+"\nemail:"+getemail()+"\nnumber:"+getnumber()
-    );   
+
+
    }
 }
