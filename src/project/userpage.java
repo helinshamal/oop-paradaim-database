@@ -41,7 +41,6 @@ public class userpage extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel15 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jRadioButton3 = new javax.swing.JRadioButton();
@@ -112,10 +111,6 @@ public class userpage extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel14.setText("ڕۆژی لە دایک بوون");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 450, 150, 30));
-
-        jDateChooser1.setBackground(new java.awt.Color(102, 136, 153));
-        jDateChooser1.setForeground(new java.awt.Color(102, 136, 153));
-        getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 220, -1));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel15.setText("شوێنی لە دایک بوون");
@@ -226,7 +221,6 @@ public class userpage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton31;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
